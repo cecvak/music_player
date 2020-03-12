@@ -2,3 +2,9 @@ $font-family: 'Roboto', sans-serif;
 $font-color-light: #ffffff;
 $font-color-dark: #979797;
 
+@mixin font-sidebar {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $font-color-dark;
+}

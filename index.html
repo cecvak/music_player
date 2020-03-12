@@ -6,62 +6,84 @@
     <title>Music Player</title>
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19c75b59f6.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="page">
 
     <div class="page_main">
-    <!-- Menu, left bar -->
-    <menu class="page_menu">
-        <!-- logo -->
-        <!-- home -->
-        <!-- search -->
-        <!-- library -->
-        <img src="images/Spotify_Logo_RGB_White.png" alt="Spotify Logo" class="logo_spotify">
-        <ul class="menu_top">
-            <li>Home</li>
-            <li>Search</li>
-            <li>Your Library</li>
-        </ul>
-        <p>Playlists</p>
-        <ul class="menu_playlists_options">
-            <li>Create Playlists</li>
-            <li>Liked Songs</li>
-        </ul>
+        <!-- Menu, left bar -->
+        <menu class="page_menu">
+            <!-- logo -->
+            <!-- home -->
+            <!-- search -->
+            <!-- library -->
+            <img src="images/Spotify_Logo_RGB_White.png" alt="Spotify Logo" class="logo_spotify">
+            <ul class=" menu_list menu_top">
+                <li class="menu_list_item"><a href="#"><i class="material-icons">
+                    home
+                    </i>Home</a></li>
+                <li class="menu_list_item"><a href="#"><i class="material-icons">
+                    search
+                    </i>Search</a></li>
+                <li class="menu_list_item">Your Library</li>
+            </ul>
+            <p>Playlists</p>
+            <ul class="menu_list menu_playlists_options">
+                <li class="menu_list_item"><a href="#"><i class="material-icons">add</i>Playlists</a></li>
+                <li class="menu_list_item"><a href="#"><i class="fas fa-heart"></i>Liked Songs</a></li>
+            </ul>
 
-        <ul class="menu_playlists_lists">
-            <li>vocal exercses</li>
-            <li>vocal</li>
-            <li>Women of Rock</li>
-            <li>Rock Classics</li>
-            <li>Discover Weekly</li>
-            <li>Led Zeppelin/Pink Floyd</li>
-        </ul>
+            <ul class="menu_list menu_playlists_lists">
+                <li class="menu_list_item">vocal exercses</li>
+                <li class="menu_list_item">vocal</li>
+                <li class="menu_list_item">Women of Rock</li>
+                <li class="menu_list_item">Rock Classics</li>
+                <li class="menu_list_item">Discover Weekly</li>
+                <li class="menu_list_item">Led Zeppelin/Pink Floyd</li>
+            </ul>
+            <p><i class="far fa-arrow-alt-circle-down"></i>Install App</p>
 
-        <!-- playlists -->
-        <!-- create playlist -->
-        <!-- liked songs -->
-        <!-- divider -->
-        <!-- playlists, list -->
-    </menu>
+            <!-- playlists -->
+            <!-- create playlist -->
+            <!-- liked songs -->
+            <!-- divider -->
+            <!-- playlists, list -->
+        </menu>
 
-    <!-- Header, top -->
-    <header class="page_header">
-        <!-- left arrow, click-->
-        <!-- right arrow, click-->
-        <!-- search bar, text area-->
-        <!-- upgrade button -->
-        <button class="button">UPGRADE</button>
-        <!-- user, click -->
-    </header>
+        <div class="page_rightside">
+        <!-- Header, top -->
+            <header class="page_header">
+                <!-- left arrow, click-->
+                <i class="material-icons">
+                    keyboard_arrow_left
+                    </i>
+                <!-- right arrow, click-->
+                <i class="material-icons">
+                    keyboard_arrow_right
+                    </i>
+                <!-- search bar, text area-->
+                <!-- upgrade button -->
+                <button class="button">UPGRADE</button>
+                <!-- user, click -->
+            </header>
 
-    <!-- Main content -->
-    <div class="page_content">
-        <!-- header top -->
-        <!-- grid, large cards, 1 row 3 columns -->
-        <!-- header browse -->
-        <!-- grid, small cards, 5 rows 6 columns -->
-    </div>
+            <!-- Main content -->
+            <div class="page_content">
+                <!-- header top -->
+                <h2>Your top genres</h2>
+                <!-- grid, large cards, 1 row 3 columns -->
+                <div class="grid_container_cards_big">
+                    <div class="card_large_one">Rock</div>
+                    <div class="card_large_two">Pop</div>
+                    <div class="card_large_three">Indie</div>
+                </div>
+                <!-- header browse -->
+                <!-- grid, small cards, 5 rows 6 columns -->
+            </div>
+        </div>
 
     </div>
     <!-- Footer -->
