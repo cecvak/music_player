@@ -100,6 +100,7 @@ body {
     flex-direction: column;
     background-color: $primary-color;
     height: 100%;
+    width: 100%;
     color: fonts.$font-color-light;
 }
 
@@ -111,27 +112,32 @@ body {
     // width: 90%;
     // height: 90%;
     max-height: 150px;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
 }
 
-.carc_large_one {
+.card_large_one {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     @include card_large;
-    background-color: yellow;
+    // font-size: 40px;
+    // background-color: yellow;
 }
 
-.carc_large_two {
+.card_large_two {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     @include card_large;
+    // background-color: yellow;
+
 }
 
-.carc_large_three {
+.card_large_three {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
     @include card_large;
+    // background-color: yellow;
+
 }
 
 .page_footer {
