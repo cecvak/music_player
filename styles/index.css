@@ -1,16 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
 .page {
+  display: -webkit-flex;
+  display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #121212;
-  display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
+}
+
+.page_main {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.page_header {
+  height: 10%;
+  width: 100%;
+  background-color: #121212;
 }
 
 .page_menu {
   background-color: #040404;
   color: #979797;
-  max-width: 15%;
+  width: 15%;
+  height: 100%;
+  padding: 10px;
+}
+
+.logo_spotify {
+  width: 60%;
+}
+
+.page_footer {
+  background-color: #282828;
+  height: 10%;
 }
 
 /*# sourceMappingURL=index.css.map */

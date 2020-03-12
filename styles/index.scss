@@ -1,21 +1,59 @@
+@use 'fonts';
+
 $primary-color: #121212;
 $accent-dark: #040404;
 $accent-light: #282828;
-$font-family: 'Roboto', sans-serif;
-$font-color-light: #ffffff;
-$font-color-dark: #979797;
+
+@mixin flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	margin: 0;
+}
 
 .page {
-	width: 100%;
+    @include flex;
+    width: 100%;
+    // max-width: 1400px;
 	height: 100vh;
-	background-color: $primary-color;
-	display: flex;
+	// background-color: $primary-color;
     flex-direction: column;
-    font-family: $font-family;
+    font-family: fonts.$font-family;
+}
+
+.page_main {
+    @include flex;
+    width: 100%;
+    height: 100%;
+}
+
+.page_header {
+    height: 10%;
+    width: 100%;
+    background-color: $primary-color;
 }
 
 .page_menu {
     background-color: $accent-dark;
-    color: $font-color-dark;
-    max-width: 15%;
+    color: fonts.$font-color-dark;
+    width: 15%;
+    height: 100%;
+    padding: 10px;
+}
+
+.logo_spotify {
+    width: 60%;
+}
+
+.page_footer {
+    background-color: $accent-light;
+    height: 10%;
 }
