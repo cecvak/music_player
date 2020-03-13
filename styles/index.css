@@ -124,11 +124,6 @@ body {
   position: relative;
 }
 
-.page_footer {
-  background-color: #282828;
-  height: 100%;
-}
-
 .card_text_small {
   z-index: 1000;
   position: absolute;
@@ -147,6 +142,32 @@ body {
   height: 200px;
   position: relative;
   overflow: hidden;
+}
+
+.page_footer {
+  background-color: #282828;
+  display: flex;
+  padding: 20px;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  border: none;
+  color: #b3b3b3;
+}
+.button :hover {
+  color: white;
+}
+
+.button_heart:focus {
+  color: red;
+}
+
+.footer_image {
+  height: 60px;
+  width: 60px;
 }
 
 /*# sourceMappingURL=index.css.map */

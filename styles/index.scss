@@ -1,6 +1,7 @@
 @use 'fonts';
 @use 'cards';
 
+
 $primary-color: #121212;
 $accent-dark: #040404;
 $accent-light: #282828;
@@ -41,6 +42,18 @@ $accent-light: #282828;
     margin-right: 30px;
 }
 
+@mixin button {
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+    border: none;
+    color: #b3b3b3;
+
+    :hover {
+        color: white;
+    }
+
+}
 
 * {
     margin: 0;
@@ -234,13 +247,6 @@ body {
 //     @include card_small;
 // }
 
-.page_footer {
-    background-color: $accent-light;
-    height: 100%;
-    // min-height: 50px;
-    // max-height: 100px;
-}
-
 .card_text_small {
     z-index: 1000;
     position: absolute;
@@ -262,4 +268,27 @@ body {
     height: 200px;
     position: relative;
     overflow: hidden;
+}
+
+
+.page_footer {
+    background-color: $accent-light;
+    // height: 100%;
+    // min-height: 50px;
+    // max-height: 100px;
+    display: flex;
+    padding: 20px;
+}
+
+.button {
+    @include button;
+}
+
+.button_heart:focus {
+    color: red;
+}
+
+.footer_image {
+    height: 60px;
+    width: 60px;
 }
